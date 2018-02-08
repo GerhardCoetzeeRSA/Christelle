@@ -7,15 +7,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
   <style>
-        body, html {
+    body, html {
             height: 110%;
             margin: 0;
-        }
-        
+    }
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    table, td {
+    border: 1px solid grey;
+    height: 50px;
+    }
+    
+    .button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    }
         .hero-image {
           background-image: url("images/Christelle.jpg");
           height: 90%;
@@ -55,7 +78,7 @@
 }
 
 body {
-    background-color: #665e5e;
+    background-color: rgb(0, 0, 0);
     padding: 10px;
     font-family: Arial;
 }
@@ -74,6 +97,10 @@ img {
     margin: auto;
 }
 
+.center {
+    text-align: center;
+}
+
 .christelle {
   max-width: 900px;
   margin: auto;
@@ -82,6 +109,26 @@ img {
 h1 {
     font-size: 40px;
     word-break: normal;
+}
+
+.icon-bar {
+    width: 80%; /* Full-width */
+    background-color: #555; /* Dark-grey background */
+    overflow: auto; /* Overflow due to float */
+}
+
+.icon-bar a {
+    float: left; /* Float links side by side */
+    text-align: center; /* Center-align text */
+    width: 25%; /* Equal width (5 icons with 20% width each = 100%) */
+    padding: 12px 0; /* Some top and bottom padding */
+    transition: all 0.3s ease; /* Add transition for hover effects */
+    color: white; /* White text color */
+    font-size: 36px; /* Increased font size */
+}
+
+.icon-bar a:hover {
+    background-color: #000; /* Add a hover color */
 }
 
 
@@ -126,7 +173,7 @@ h1 {
 .content {
     background-color:#f5f0e7f5;
     color: black;
-    padding: 10px 180px;
+    padding: 20px 180px;
     max-width: 100%;
     margin: auto;
     height:auto;
@@ -135,7 +182,7 @@ h1 {
 
 .content1 {
     background-color:#990000;
-    color: black;
+    color: white;
     padding: 15px;
     text-align: center;
 }
@@ -145,6 +192,15 @@ h1 {
     color: black;
     padding: 0px;
     max-width: 100%;
+    margin: auto;
+    height:auto;
+    text-align: center;
+}
+
+.content3 {
+    background-color:grey;
+    color: white;
+    padding: 25px 50px;
     margin: auto;
     height:auto;
     text-align: center;
@@ -160,14 +216,8 @@ h1 {
     padding: 10px;
 }
 
-/* Add some shadows to create a card effect */
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-/* Some left and right padding inside the container */
-.container {
-    padding: 0 16px;
+bodyWie {
+    background-color: white;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
@@ -181,110 +231,186 @@ h1 {
 </style>
 </head>
 <body>
+  <!-- Container (WIE IS EK?) -->
   <div class="hero-image responsive">
     <div class="hero-text">
       <div class="container-fluid">
         <h1 style="font-size:45px">Ek Is Christelle Coetzee</h1>
         <h3>En ek is 'n Derde Jaar BA Regte Student by Tukkies</h3>
-          <button><h4>Help my om my loopbaan-droom waar te maak</h4></button>
+          <button><a href="#C4"><h4>Help my om my loopbaan-droom waar te maak</a></h4></button>
       </div>
     </div>
   </div>
 
-  <div class="container-fluid content">
-      <h2>Wie Is Ek?</h2>
-      <h4><em>Ek ...............</em></h4>
-      <h5>Ek werk baie hard om 'n verskil te maak aan mense rondom my</h5>
-      <br>
-      <div class="row">
-        <div class="col-sm-3">
-          <h4><strong>Akademies</strong></h4>
-          <img src="https://s-media-cache-ak0.pinimg.com/originals/92/79/81/927981e1c7e64c1c57880021db566f8d.jpg" alt="Akademies" width="150" height="150">
-        <h4>Onderskeiding 1e jaar (2016)</h4>
-        <h4>Golden Key Award (2016)</h4>
-        </div>
-        <div class="col-sm-3">
-          <h4><strong>Sport</strong></h4>
-          <img src="https://cdn.pixabay.com/photo/2017/08/07/18/51/people-2606716_960_720.jpg" alt="Kick Boxing" width="180" height="150">
-        <h4>Kick Boxing Instrukteur</h4>
-        </div>
-        <div class="col-sm-3">
-          <h4><strong>Gemeenskapswerk</strong></h4>
-          <img src="https://media.defense.gov/2014/Jul/10/2000833891/670/394/0/140707-F-LT259-063.JPG" alt="NPO" width="180" height="150">
-        <h4>Mede-direkteur van my eie NPO</h4>
-        </div>
-        <div class="col-sm-3">
-            <h4><strong>Promosie</strong></h3>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/7/74/F1_GP_grid_girls.jpg" alt="Promosie" width="150" height="150">
-            <h4>Deeltydse promosiewerk</h4>
-          </div>
-      </div>
-    </div>
-
+  <!-- Container (WIE IS EK?) -->
+  <div class="container-fluid text-center content1">
+    <h2>WAT EK DOEN</h2>
+    <h4>Terwyl ek voltyds studeer, <br>werk ek ook om myself te onderhou</h4>
+    <br>
     <div class="row">
-        <div class="column">
-          <div class="card">
-            <img src="img1.jpg" alt="Jane" style="width:100%">
-            <div class="container">
-              <h2>Jane Doe</h2>
-              <p class="title">CEO &amp; Founder</p>
-              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-              <p>example@example.com</p>
-              <p><button class="button">Contact</button></p>
-            </div>
-          </div>
-        </div>
-      
-        <div class="column">
-          <div class="card">
-            <img src="img2.jpg" alt="Mike" style="width:100%">
-            <div class="container">
-              <h2>Mike Ross</h2>
-              <p class="title">Art Director</p>
-              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-              <p>example@example.com</p>
-              <p><button class="button">Contact</button></p>
-            </div>
-          </div>
-        </div>
-      
-        <div class="column">
-          <div class="card">
-            <img src="img3.jpg" alt="John" style="width:100%">
-            <div class="container">
-              <h2>John Doe</h2>
-              <p class="title">Designer</p>
-              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-              <p>example@example.com</p>
-              <p><button class="button">Contact</button></p>
-            </div>
-          </div>
-        </div>
+      <div class="col-sm-3">
+        <span><i class="fa fa-balance-scale" style="font-size:48px;color:white"></i></span>
+        <h4>EK STUDEER REGTE</h4>
+        <p>Onderskeiding 1e Jaar 2016</p>
+        <p>Golden Key Award 2016</p>
+        <p>Golden Key Award Uitnodiging vir Akademiese besoek aan China 2017</p>
       </div>
-
-  <div class="col col-container container content2">
-    <div class="row">
-      <div class="content">
-        <div class="col-sm-6">
-            <img src="https://c1.staticflickr.com/5/4150/5007471553_f37124d853_b.jpg" alt="Au Pair" style="width:100%">
-            <h4>Ek verdien my eie inkomste as "au pair".</h4>
-            <p>Ek werk ook Donderdagaande as promosiedame by 'n bekende restaurant.</p>
-            <h4><em>Ek kan egter nie alleen my studiekostes dra nie.</em></h4>
-        </div>
-        <div class="content">
-          <div class="col-sm-6">
-            <img src="https://cdn.pixabay.com/photo/2017/09/07/08/54/money-2724241_960_720.jpg" alt="Help my om my toekomsdroom waar te maak" style="width:100%">
-            <h4>Help my om my toekomsdroom waar te maak</h4>
-          </div>
-        </div>
+      <div class="col-sm-3">
+        <span><i class="fa fa-cutlery" style="font-size:48px;color:white"></i></span>
+        <h4>PROMOSIE</h4>
+        <p>Ek doen een keer per weeksaand<br>
+            promosiewerk in Restaurante</p>
+      </div>
+      <div class="col-sm-3">
+        <span><i class="fa fa-child" style="font-size:48px;color:white"></i></span>
+        <h4>AU PAIR</h4>
+        <p>Ek vervoer en help 'n kind<br>
+        smiddae na klas met huiswerk</p>
+      </div>
+      <div class="col-sm-3">
+        <span><i class="fa fa-copyright" style="font-size:48px;color:white"></i></span>
+        <h4>MY LOOPBAAN PASSIE</h4>
+        <p>Ek is besig om myself te bekwaam<br>
+            as Patentereg Prokureur.
       </div>
     </div>
   </div>
 
-<div class="container christelle content1">
-    <img src="images/ChristelleGeldinsamel.JPG" alt="Help my om my toekomsdroom waar te maak" style="width:80%">
-</div>
+    <!-- Container (HELP MY) -->
+  <div class="container text-center content">
+        <h2 id="C4">HELP MY ASB MET MY STUDIEKOSTES</h2>
+        <h3>Ek het reeds my registrasiegeld vir 2018 self bymekaar gemaak.</h3>
+        <h4>Ek benodig R24 500 om voort te kan gaan met my studies.</h4>
+        <h4>Ek moet R12 250 betaal teen 16 Februarie.</h4>
+        <p>Kan jy my help? Vul asb die vorm hieronder in as jy 'n bydrae kan maak tot my toekoms.</p>
+        <p>Borg asb een of meer blokkies hieronder teen R306.25 per blokkie.</p>
+        <p>As jy as besigheid my borg, sal ek jou besigheidnaam en kontakbesonderhede in die blokkie aanbring!</p>
+        <p>Baie dankie dat jy my help!</p>
+        <br>
+        <a href="https://docs.google.com/forms/d/1uF5RqhUq81Xly5vTrYnnUYDmJULyEPWWkDIG1f5F-7Y/edit?usp=sharing" class="button">Ja, ek sal graag Christelle help!</a>
+        <br>
+        <br>
+        <table align="center">
+                <tr>
+                  <td>1</td>
+                  <td>2</td>
+                  <td>3</td>
+                  <td>4</td>
+                  <td>5</td>
+                  <td>6</td>
+                  <td>7</td>
+                  <td>8</td>
+                  <td>9</td>
+                  <td>10</td>
+                </tr>
+                <tr>
+                  <td>11</td>
+                  <td>12</td>
+                  <td>13</td>
+                  <td>14</td>
+                  <td>15</td>
+                  <td>16</td>
+                  <td>17</td>
+                  <td>18</td>
+                  <td>19</td>
+                  <td>20</td>
+                </tr>
+                <tr>
+                  <td>21</td>
+                 <td>22</td>
+                <td>23</td>
+                <td>24</td>
+                <td>25</td>
+                <td>26</td>
+                <td>27</td>
+                <td>28</td>
+                <td>29</td>
+                <td>30</td>
+                </tr>
+                <tr>
+                <td>31</td>
+                <td>32</td>
+                <td>33</td>
+                <td>34</td>
+                <td>35</td>
+                <td>36</td>
+                <td>37</td>
+                <td>38</td>
+                <td>39</td>
+                <td>40</td>
+                </tr>
+                <tr>
+                        <td>41</td>
+                        <td>42</td>
+                        <td>43</td>
+                        <td>44</td>
+                        <td>45</td>
+                        <td>46</td>
+                        <td>47</td>
+                        <td>48</td>
+                        <td>49</td>
+                        <td>50</td>
+                      </tr>
+                      <tr>
+                        <td>51</td>
+                        <td>52</td>
+                        <td>53</td>
+                        <td>54</td>
+                        <td>55</td>
+                        <td>56</td>
+                        <td>57</td>
+                        <td>58</td>
+                        <td>59</td>
+                        <td>60</td>
+                      </tr>
+                      <tr>
+                        <td>61</td>
+                       <td>62</td>
+                      <td>63</td>
+                      <td>64</td>
+                      <td>65</td>
+                      <td>66</td>
+                      <td>67</td>
+                      <td>68</td>
+                      <td>69</td>
+                      <td>70</td>
+                      </tr>
+                      <tr>
+                      <td>71</td>
+                      <td>72</td>
+                      <td>73</td>
+                      <td>74</td>
+                      <td>75</td>
+                      <td>76</td>
+                      <td>77</td>
+                      <td>78</td>
+                      <td>79</td>
+                      <td>80</td>
+                      </tr>
+            </table>
+  </div>
 
+      <!-- Container (FOOTER) -->
+    <div class="container-fluid content3">
+        <div class="row">
+            <div class="col-sm-6">
+                    <img src="images/Gerhard.jpg" alt="Gerhard Coetzee" width="55%">
+            </div>
+            <div class="col-sm-6 center">
+                <h4>MY PA, GERHARD COETZEE</h4>
+                <p>Dankie Pa vir hierdie webblad!</p>
+                <p>Vanaf November 2017 het Gerhard homself geleer<br>
+                    om "Front End Web Development" te doen.</p>
+                <p>Hy is beskikbaar vir webontwikkeling.</p>
+                <br>  
+                <div class="icon-bar">
+                    <a href="http://facebook.com/coetzeeg"><i class="fa fa-facebook"></i></a> 
+                    <a href="http://twitter.com/@CoetzeeGerhard"><i class="fa fa-twitter"></i></a> 
+                    <a href="http://za.linkedin.com/pub/dr-gerhard-coetzee/15/828/227/"><i class="fa fa-linkedin"></i></a> 
+                    <a href="mailto:gerhardseepos@gmail.com"><i class="fa fa-envelope-o"></i></a>
+                    <div style="clear:both"></div>
+                </div>
+            </div>
 </body>
 </html>
       
